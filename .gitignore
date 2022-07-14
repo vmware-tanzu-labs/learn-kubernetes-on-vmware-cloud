@@ -1,4 +1,4 @@
 # Ignore everything in this directory
-*
+.DS_Store
 # Except this file
 !.gitignore

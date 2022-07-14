@@ -1,0 +1,47 @@
+# Copyright 2019 VMware, Inc.
+# SPDX-License-Identifier: BSD-2-Clause
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: myfirst-lbservice
+spec:
+  selector:
+    app: game
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game-deployment
+  labels:
+    app: game
+  annotations:
+    kubernetes.io/change-cause: Initial Deployment
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  replicas: 3
+  selector:
+    matchLabels:
+      app: game
+  template:
+    metadata:
+      name: game
+      labels:
+        app: game
+    spec:
+      containers:
+      - name: game
+        image: bsord/tetris
+        ports:
+        - containerPort: 80
+
+
