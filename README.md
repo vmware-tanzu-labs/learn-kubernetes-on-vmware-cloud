@@ -6,8 +6,6 @@ Welcome to to a set of labs purposefully built for VMware Cloud on AWS customers
 
 Each of the labs contained in this repository are designed to augment training videos found on the [VMware Cloud TechZone site](https://vmc.techzone.vmware.com/kubernetes-vmware-cloud-course). It is highly recommended to go through the training lectures before taking any of the labs found in this repository.
 
-
-
 ## Labs
 
 | Lab | Name | Description |
@@ -37,3 +35,8 @@ git clone https://github.com/vmware-tanzu-labs/learn-kubernetes-on-vmware-cloud.
 Once you've pulled down this repository to your local workstation, you can change your working directory to the lab you're taking.
 
 > Note: If you're taking labs over a long period of time, be sure to refresh your local git repository to retrieve any new labs that have been published since you originally pulled from the remote repository.
+
+## Contributing
+
+New lab added to this repository should coincide with lectures created on the VMware Techzone webpage. Additional contributions such as bug fixes and other issues are welcome through pull requests.
+To contribute to this repository please create a new branch off of main for any additions or updates. When the updates have been completed, please create a pull request to be reviewed by the maintainers.
