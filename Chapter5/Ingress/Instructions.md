@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will deploy a Kubernetes service and use a test container to access the pods behind the service.
+In this lab, you will deploy a pair of applications and access them through Kubernetes Ingress.
 
 ### Step 1 - Authenticate to the TKG Service (if necessary)
 
