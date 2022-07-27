@@ -23,6 +23,7 @@ Each of the labs contained in this repository are designed to augment training v
 | 11 |[Working with Services](/Chapter5/Working%20with%20Services/Instructions.md)| Working with Kubernetes Services |
 | 12 |[Load Balancers](/Chapter5/Load%20Balancers/Instructions.md)| Creating Load Balancers |
 | 13 |[Namespaces and DNS](/Chapter5/namespaces/Instructions.md)| Working with Namespaces |
+| 14 |[Ingress](/Chapter5/ingress/Instructions.md)| Working with Ingress |
 
 ## Using Lab Example Files
 
